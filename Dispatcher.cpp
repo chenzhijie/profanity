@@ -409,7 +409,7 @@ void Dispatcher::onEvent(cl_event event, cl_int status, Device & d) {
 		{
 			std::lock_guard<std::mutex> lock(m_mutex);
 			d.m_speed.sample(m_size);
-			printSpeed();
+			// printSpeed();
 
 			if( m_quit ) {
 				bDispatch = false;
